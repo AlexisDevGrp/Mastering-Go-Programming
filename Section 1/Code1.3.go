@@ -13,10 +13,10 @@ func main() {
 		return
 	}
 	defer response.Body.Close()
-	contents, err := ioutil.ReadAll(response.Body)
+	contentss, err := ioutil.ReadAll(response.Body)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println(string(contents))
+	fmt.Println(string(contentss))
 }
